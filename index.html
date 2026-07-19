@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philip Lucas | Master Builder & Mason — Kenya</title>
+  <meta name="description" content="Philip Lucas is a Master Builder and Mason in Kenya. Premium residential construction, precision stonework, and structural craftsmanship built to last generations.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="theme-color" content="#111827">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .hero-vignette::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(17,24,39,0.35) 0%, rgba(17,24,39,0.55) 55%, rgba(17,24,39,0.85) 100%);
+      pointer-events: none;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.9s ease-out both; }
+    .fade-up-delay-1 { animation: fadeUp 0.9s ease-out 0.15s both; }
+    .fade-up-delay-2 { animation: fadeUp 0.9s ease-out 0.30s both; }
+    .fade-up-delay-3 { animation: fadeUp 0.9s ease-out 0.45s both; }
+  </style>
+</head>
+<body class="bg-[#F7F5F1] text-gray-800 antialiased selection:bg-amber-700 selection:text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white/85 backdrop-blur-md z-40 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group" aria-label="Philip Lucas — home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" width="26" height="32" aria-hidden="true" class="flex-shrink-0">
+          <!-- Keystone silhouette: wider at top, tapering down -->
+          <path d="M 4 4 L 28 4 L 25 36 L 7 36 Z" fill="#B45309"/>
+          <!-- Inner wedge-stone line (mason's joint hint) -->
+          <line x1="9" y1="24" x2="23" y2="24" stroke="#F9FAFB" stroke-width="0.9" opacity="0.55"/>
+          <!-- PL monogram in Playfair serif -->
+          <text x="16" y="20" text-anchor="middle" font-family="'Playfair Display', 'Times New Roman', serif" font-size="12" font-weight="600" fill="#F9FAFB" letter-spacing="0.5">PL</text>
+        </svg>
+        <span class="text-lg md:text-xl font-semibold tracking-[0.2em] text-gray-900 group-hover:text-amber-700 transition">PHILIP&nbsp;LUCAS</span>
+      </a>
+      <nav class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.2em] text-gray-600 uppercase">
+        <a href="#work" class="hover:text-amber-700 transition">Work</a>
+        <a href="#about" class="hover:text-amber-700 transition">About</a>
+        <a href="#contact" class="hover:text-amber-700 transition">Contact</a>
+      </nav>
+      <button id="menuBtn" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false" class="md:hidden items-center justify-center p-2 -mr-2 text-gray-900 hover:text-amber-700 transition flex bg-transparent border-0 cursor-pointer" onclick="openMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Side Nav -->
+  <div id="navBackdrop" class="md:hidden fixed inset-0 bg-gray-950/60 z-40 opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeMenu()"></div>
+  <aside id="mobileNav" class="md:hidden fixed top-0 right-0 bottom-0 w-[82%] max-w-sm bg-[#111827] text-white z-50 transform translate-x-full transition-transform duration-300 ease-out flex flex-col" aria-hidden="true">
+    <div class="flex items-center justify-between h-20 px-6 border-b border-gray-800">
+      <span class="text-sm font-semibold tracking-[0.2em] text-amber-400">MENU</span>
+      <button aria-label="Close menu" class="-mr-2 p-2 text-white hover:text-amber-400 transition" onclick="closeMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" class="w-6 h-6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="flex-1 flex flex-col justify-start py-4">
+      <a href="#work" onclick="closeMenu()" class="px-6 py-5 border-b border-gray-800 text-2xl font-light tracking-wide hover:bg-gray-800/60 hover:text-amber-400 transition">
+        <span class="text-xs text-amber-400 tracking-[0.25em] uppercase font-medium block mb-1">01</span>
+        Work
+      </a>
+      <a href="#about" onclick="closeMenu()" class="px-6 py-5 border-b border-gray-800 text-2xl font-light tracking-wide hover:bg-gray-800/60 hover:text-amber-400 transition">
+        <span class="text-xs text-amber-400 tracking-[0.25em] uppercase font-medium block mb-1">02</span>
+        About
+      </a>
+      <a href="#contact" onclick="closeMenu()" class="px-6 py-5 border-b border-gray-800 text-2xl font-light tracking-wide hover:bg-gray-800/60 hover:text-amber-400 transition">
+        <span class="text-xs text-amber-400 tracking-[0.25em] uppercase font-medium block mb-1">03</span>
+        Contact
+      </a>
+    </nav>
+    <div class="p-6 border-t border-gray-800 space-y-4">
+      <a href="https://wa.me/254706422406" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 w-full px-6 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-medium tracking-[0.15em] uppercase text-xs transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <p class="text-xs text-gray-500 text-center tracking-wider">+254 706 422 406</p>
+    </div>
+  </aside>
+
+  <!-- Hero -->
+  <section class="relative min-h-[92vh] flex items-end overflow-hidden">
+    <div class="hero-vignette absolute inset-0">
+      <img src="images/hero.jpg" alt="A finished residential home built by Philip Lucas" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pb-20 md:pb-28 pt-32 text-white">
+      <span class="fade-up text-xs font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-5">Master Mason &amp; Builder · Kenya</span>
+      <h1 class="fade-up-delay-1 text-4xl sm:text-5xl md:text-7xl font-light leading-[1.05] max-w-4xl mb-6">
+        Crafting spaces.<br>
+        <span class="italic font-normal text-amber-300">Building legacies.</span>
+      </h1>
+      <p class="fade-up-delay-2 text-base md:text-lg text-gray-200 font-light max-w-xl leading-relaxed mb-10">
+        Premium residential construction and precision stonework — from first foundation to final finish. Turning architectural drawings into structures that outlast the drawing itself.
+      </p>
+      <div class="fade-up-delay-3 flex flex-col sm:flex-row gap-4">
+        <a href="#work" class="inline-flex justify-center items-center px-8 py-4 bg-amber-700 hover:bg-amber-800 text-white text-sm font-medium tracking-[0.15em] uppercase transition shadow-lg">
+          View Portfolio
+        </a>
+        <a href="#contact" class="inline-flex justify-center items-center px-8 py-4 border border-white/40 hover:bg-white/10 text-white text-sm font-medium tracking-[0.15em] uppercase transition">
+          Start a Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-[#111827] text-white py-24 md:py-32 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-5 gap-12 md:gap-16 items-start">
+      <div class="md:col-span-2">
+        <span class="text-xs font-semibold tracking-[0.3em] text-amber-400 uppercase block mb-4">The Philosophy</span>
+        <h2 class="text-3xl md:text-5xl font-light leading-[1.1]">
+          Precision in every stone.<br><span class="italic text-amber-300">Integrity in every build.</span>
+        </h2>
+      </div>
+      <div class="md:col-span-3 space-y-5 text-gray-300 font-light leading-relaxed text-base md:text-lg">
+        <p>
+          For years, Philip Lucas has led builds across Kenya — turning complex architectural drawings into breathtaking structural realities. Every project begins the same way: with materials chosen for the long term, and lines set true from the first course.
+        </p>
+        <p>
+          Whether it's a modern family estate, intricate stone masonry, or a robust concrete foundation, the standard doesn't move. Uncompromising material quality. Structural longevity. Refined, quiet aesthetics.
+        </p>
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-800 mt-8">
+          <div>
+            <div class="text-3xl md:text-4xl font-light text-amber-400 mb-1">10+</div>
+            <div class="text-xs tracking-widest uppercase text-gray-400">Years on site</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-light text-amber-400 mb-1">50+</div>
+            <div class="text-xs tracking-widest uppercase text-gray-400">Projects delivered</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-light text-amber-400 mb-1">100%</div>
+            <div class="text-xs tracking-widest uppercase text-gray-400">Hands-on lead</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section id="work" class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-16">
+      <span class="text-xs font-semibold tracking-[0.3em] text-amber-700 uppercase block mb-4">Selected Work</span>
+      <h2 class="text-3xl md:text-5xl font-light text-gray-950 leading-tight">Featured constructions across Kenya.</h2>
+      <div class="w-16 h-[2px] bg-amber-700 mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/5] lg:row-span-2" onclick="openModal(this)">
+        <img src="images/project1.jpg" alt="Finished residential veranda with stone walls and detailed railings" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-950/20 to-transparent opacity-90 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Residential</span>
+          <p class="text-white font-medium text-lg tracking-wide">Veranda & Stone Detail</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project2.jpg" alt="Front porch with cream columns and ornate railings" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Residential</span>
+          <p class="text-white font-medium text-base">Columned Entrance</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project3.jpg" alt="Small stone-clad utility building with tile floor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Masonry</span>
+          <p class="text-white font-medium text-base">Stone-clad Outbuilding</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3] md:col-span-2" onclick="openModal(this)">
+        <img src="images/project4.jpg" alt="Roof framing against a bright blue sky" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Structural</span>
+          <p class="text-white font-medium text-base">Roof Framing & Tiling</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project5.jpg" alt="Dark tiled roof under blue sky with clouds" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Structural</span>
+          <p class="text-white font-medium text-base">Roof Line</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project6.jpg" alt="Elevated water tank tower on a stone-block base" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Utility</span>
+          <p class="text-white font-medium text-base">Water Tower</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project7.jpg" alt="Green tile roof under construction, dormer and framing visible" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Structural</span>
+          <p class="text-white font-medium text-base">Dormer & Roofline</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project8.jpg" alt="Detailed stone masonry courses being built" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Masonry</span>
+          <p class="text-white font-medium text-base">Stone Coursework</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3] md:col-span-2" onclick="openModal(this)">
+        <img src="images/project9.jpg" alt="In-progress block wall foundation for a new home" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Foundation</span>
+          <p class="text-white font-medium text-base">Structural Blockwork</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project10.jpg" alt="Rendered bungalow with textured plaster and stone base at dusk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Residential</span>
+          <p class="text-white font-medium text-base">Rendered Bungalow</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project11.jpg" alt="Utility outbuilding with textured stone panel and painted double doors" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Masonry</span>
+          <p class="text-white font-medium text-base">Textured Stone Panel</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project12.jpg" alt="Custom-fabricated arched steel gate laid flat, showing decorative panels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Metalwork</span>
+          <p class="text-white font-medium text-base">Custom Steel Gate</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project13.jpg" alt="Smooth-plastered concrete water reservoir with finished corner detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Structural</span>
+          <p class="text-white font-medium text-base">Water Reservoir</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project14.jpg" alt="Wider view of a full-house block-wall foundation under construction" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Foundation</span>
+          <p class="text-white font-medium text-base">Full-House Foundation</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project15.jpg" alt="Custom-fabricated steel security door with decorative panels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Metalwork</span>
+          <p class="text-white font-medium text-base">Steel Security Door</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3]" onclick="openModal(this)">
+        <img src="images/project16.jpg" alt="Decorative stone garden feature on a tiled platform" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Detail</span>
+          <p class="text-white font-medium text-base">Decorative Stone Feature</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden bg-gray-100 cursor-pointer aspect-[4/3] md:col-span-2" onclick="openModal(this)">
+        <img src="images/project17.jpg" alt="Traditional-style home with textured plaster panels and tin roof" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-xs tracking-[0.25em] text-amber-400 uppercase mb-2">Residential</span>
+          <p class="text-white font-medium text-base">Traditional Bungalow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services strip -->
+  <section class="bg-white border-t border-b border-gray-200 py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 text-center">
+      <div>
+        <div class="text-amber-700 text-3xl font-light mb-3">01</div>
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Residential Builds</h3>
+        <p class="text-sm text-gray-600 font-light">Family homes and estates from foundation to keys.</p>
+      </div>
+      <div>
+        <div class="text-amber-700 text-3xl font-light mb-3">02</div>
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Precision Masonry</h3>
+        <p class="text-sm text-gray-600 font-light">Natural stone walls, cladding, and decorative coursework.</p>
+      </div>
+      <div>
+        <div class="text-amber-700 text-3xl font-light mb-3">03</div>
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Structural Concrete</h3>
+        <p class="text-sm text-gray-600 font-light">Foundations, slabs, and load-bearing framing built true.</p>
+      </div>
+      <div>
+        <div class="text-amber-700 text-3xl font-light mb-3">04</div>
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Finishing & Detail</h3>
+        <p class="text-sm text-gray-600 font-light">Verandas, roofing, and the small work that defines quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 md:py-32 px-6 max-w-4xl mx-auto text-center">
+    <span class="text-xs font-semibold tracking-[0.3em] text-amber-700 uppercase block mb-4">Get in Touch</span>
+    <h2 class="text-3xl md:text-5xl font-light text-gray-950 mb-6 leading-tight">Let's build something that lasts.</h2>
+    <p class="text-gray-600 font-light max-w-xl mx-auto mb-10 text-lg">
+      Planning a new build, extension, or major renovation? Send the drawings — or just the idea — and we'll take it from there.
+    </p>
+    <div class="flex flex-col items-center justify-center space-y-4">
+      <a href="https://wa.me/254706422406" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-10 py-5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-medium tracking-[0.15em] uppercase text-sm transition shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <p class="text-sm text-gray-500 font-light pt-4">
+        <span class="tracking-wider">+254 706 422 406</span> · Based in Kenya · Available nationwide
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#111827] text-gray-400 py-10 px-6 border-t border-gray-900">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" width="20" height="26" aria-hidden="true">
+          <path d="M 4 4 L 28 4 L 25 36 L 7 36 Z" fill="#B45309"/>
+          <line x1="9" y1="24" x2="23" y2="24" stroke="#F9FAFB" stroke-width="0.9" opacity="0.55"/>
+        </svg>
+        <span class="text-sm tracking-[0.2em] text-white font-semibold">PHILIP LUCAS</span>
+      </div>
+      <p class="text-xs text-gray-500">&copy; 2026 Philip Lucas · Master Builder &amp; Mason · Kenya</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254706422406" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl transition transform hover:scale-105">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="fixed inset-0 bg-gray-950/95 z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="closeModal(event)">
+    <button aria-label="Close" class="absolute top-6 right-6 text-white hover:text-amber-400 text-4xl font-light leading-none z-10">&times;</button>
+    <button aria-label="Previous" class="absolute left-4 md:left-8 text-white hover:text-amber-400 text-4xl md:text-5xl font-light z-10 select-none" onclick="event.stopPropagation(); navModal(-1)">&#8249;</button>
+    <button aria-label="Next" class="absolute right-4 md:right-8 text-white hover:text-amber-400 text-4xl md:text-5xl font-light z-10 select-none" onclick="event.stopPropagation(); navModal(1)">&#8250;</button>
+    <figure class="max-w-6xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+      <img id="modalImage" src="" alt="" class="max-w-full max-h-[80vh] object-contain">
+      <figcaption id="modalCaption" class="text-gray-300 text-sm mt-4 tracking-wide"></figcaption>
+    </figure>
+  </div>
+
+  <script>
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCap = document.getElementById('modalCaption');
+    let galleryItems = [];
+    let currentIndex = 0;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      galleryItems = Array.from(document.querySelectorAll('#work .group'));
+    });
+
+    function openModal(element) {
+      currentIndex = galleryItems.indexOf(element);
+      showCurrent();
+      modal.classList.remove('hidden');
+      requestAnimationFrame(() => modal.classList.remove('opacity-0'));
+      document.body.style.overflow = 'hidden';
+    }
+
+    function showCurrent() {
+      const img = galleryItems[currentIndex].querySelector('img');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modalCap.textContent = img.alt;
+    }
+
+    function navModal(dir) {
+      currentIndex = (currentIndex + dir + galleryItems.length) % galleryItems.length;
+      showCurrent();
+    }
+
+    function closeModal(e) {
+      if (e && e.target.closest('figure') && e.target.tagName !== 'IMG') return;
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') navModal(-1);
+      if (e.key === 'ArrowRight') navModal(1);
+    });
+
+    // --- Mobile side navigation ---
+    const mobileNav = document.getElementById('mobileNav');
+    const navBackdrop = document.getElementById('navBackdrop');
+    const menuBtn = document.getElementById('menuBtn');
+
+    function openMenu() {
+      mobileNav.classList.remove('translate-x-full');
+      navBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+      mobileNav.setAttribute('aria-hidden', 'false');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileNav.classList.add('translate-x-full');
+      navBackdrop.classList.add('opacity-0', 'pointer-events-none');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileNav.classList.contains('translate-x-full')) closeMenu();
+    });
+  </script>
+</body>
+</html>
